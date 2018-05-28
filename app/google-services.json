@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "189619653882",
+    "firebase_url": "https://tallercomp-ad1bd.firebaseio.com",
+    "project_id": "tallercomp-ad1bd",
+    "storage_bucket": "tallercomp-ad1bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189619653882:android:9590b4483c47754a",
+        "android_client_info": {
+          "package_name": "com.holamundo.tallercomputadores"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189619653882-95na15b0r0b2gibbqnc8bf5uuuq4bfbi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.holamundo.tallercomputadores",
+            "certificate_hash": "c5f78e211030c34192e6b1a60cf339a927bf84ac"
+          }
+        },
+        {
+          "client_id": "189619653882-g1da6s2ie8ethh9eavoqq4ks84e1almh.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "189619653882-g1da6s2ie8ethh9eavoqq4ks84e1almh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9fVEbIQYNg8YdQE6-_Dd6B8rE33wQAdA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189619653882-g1da6s2ie8ethh9eavoqq4ks84e1almh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
