@@ -40,4 +40,6 @@
     <string name="guardado_exitoso">Guardado exitosamente!</string>
     <string name="eliminado_exitoso">Computador eliminado</string>
     <string name="error_vacio">Debe llenar los campos en blanco!</string>
+    <string name="crear">Crear</string>
+    <string name="limpiar">Limpiar</string>
 </resources>

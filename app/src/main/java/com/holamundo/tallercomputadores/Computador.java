@@ -6,20 +6,20 @@ package com.holamundo.tallercomputadores;
 
 public class Computador {
     private String id,marca,color,tipo,sistemaOperativo;
-    private int foto,ram;
+    private int imagen,ram;
 
     public Computador() {
 
     }
 
-    public Computador(String id, String marca,int ram, String color, String tipo, String sistemaOperativo, int foto) {
+    public Computador(String id, String marca,int ram, String color, String tipo, String sistemaOperativo, int imagen) {
         this.id = id;
         this.marca = marca;
         this.ram = ram;
         this.color = color;
         this.tipo = tipo;
         this.sistemaOperativo = sistemaOperativo;
-        this.foto = foto;
+        this.imagen = imagen;
     }
 
     public String getId() {
@@ -70,12 +70,12 @@ public class Computador {
         this.sistemaOperativo = sistemaOperativo;
     }
 
-    public int getFoto() {
-        return foto;
+    public int getimagen() {
+        return imagen;
     }
 
-    public void setFoto(int foto) {
-        this.foto = foto;
+    public void setimagen(int imagen) {
+        this.imagen = imagen;
     }
 
     public void guardar(){
