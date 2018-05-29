@@ -8,6 +8,8 @@ import android.widget.ImageView;
 
 import java.util.ArrayList;
 
+import static com.holamundo.tallercomputadores.R.id.lblMarca;
+
 /**
  * Created by android on 28/05/2018.
  */
@@ -26,6 +28,7 @@ public class adpComputador extends RecyclerView.Adapter<adpComputador.Computador
     public void onBindViewHolder(ComputadorViewHolder holder, int position) {
         final Computador c = computadores.get(position);
         holder.imagen.setImageResource(c.getimagen());
+        holder.marca.setText(c.getMarca());
 
 
         holder.v.setOnClickListener(new View.OnClickListener() {
