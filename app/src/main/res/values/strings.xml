@@ -42,4 +42,9 @@
     <string name="error_vacio">Debe llenar los campos en blanco!</string>
     <string name="crear">Crear</string>
     <string name="limpiar">Limpiar</string>
+    <string name="informacion">Informacion</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="pregunta_eliminar">Esta seguro que desea eliminarlo?</string>
+    <string name="eliminar_si">Si, Eliminar</string>
+    <string name="eliminar_no">No, Cancelar</string>
 </resources>

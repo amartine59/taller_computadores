@@ -12,7 +12,11 @@ public class Computador {
 
     }
 
-    public Computador(String id, String marca,int ram, String color, String tipo, String sistemaOperativo, int imagen) {
+    public Computador(String id) {
+        this.id = id;
+    }
+
+    public Computador(String id, String marca, int ram, String color, String tipo, String sistemaOperativo, int imagen) {
         this.id = id;
         this.marca = marca;
         this.ram = ram;

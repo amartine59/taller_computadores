@@ -1,10 +1,12 @@
 package com.holamundo.tallercomputadores;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -18,6 +20,11 @@ public class adpComputador extends RecyclerView.Adapter<adpComputador.Computador
     private ArrayList<Computador> computadores;
     private OnComputadorClickListener clickListener;
 
+    public adpComputador(ArrayList<Computador> computadores, OnComputadorClickListener clickListener) {
+        this.computadores = computadores;
+        this.clickListener = clickListener;
+    }
+
     @Override
     public ComputadorViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_computador,parent,false);
@@ -29,6 +36,10 @@ public class adpComputador extends RecyclerView.Adapter<adpComputador.Computador
         final Computador c = computadores.get(position);
         holder.imagen.setImageResource(c.getimagen());
         holder.marca.setText(c.getMarca());
+        holder.ram.setText(c.getRam());
+        holder.color.setText(c.getColor());
+        holder.tipo.setText(c.getTipo());
+        holder.sistema_operativo.setText(c.getSistemaOperativo());
 
 
         holder.v.setOnClickListener(new View.OnClickListener() {
@@ -41,14 +52,13 @@ public class adpComputador extends RecyclerView.Adapter<adpComputador.Computador
 
     @Override
     public int getItemCount() {
-        return 0;
+        return computadores.size();
     }
 
 
     public static class ComputadorViewHolder extends RecyclerView.ViewHolder{
         private ImageView imagen;
-        private String marca,color,tipo,sistema_operativo;
-        private int ram;
+        private TextView marca,ram,color,tipo,sistema_operativo;
         private View v;
 
         public ComputadorViewHolder(View itemView) {
