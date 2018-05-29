@@ -36,7 +36,7 @@ public class adpComputador extends RecyclerView.Adapter<adpComputador.Computador
         final Computador c = computadores.get(position);
         holder.imagen.setImageResource(c.getimagen());
         holder.marca.setText(c.getMarca());
-        holder.ram.setText(c.getRam());
+        holder.ram.setText(String.valueOf(c.getRam()));
         holder.color.setText(c.getColor());
         holder.tipo.setText(c.getTipo());
         holder.sistema_operativo.setText(c.getSistemaOperativo());

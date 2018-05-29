@@ -59,19 +59,23 @@ public class CrearComputador extends AppCompatActivity {
     }
 
     public void guardar(View v){
-        String id,marca,color,tipo,sistema_operativo;
-        int imagen, ram;
-        id = Datos.getId();
-        marca = ObtenerCadena(spn_marca);
-        ram = Integer.parseInt(txtRam.getText().toString());
-        color = ObtenerCadena(spn_color);
-        tipo = ObtenerCadena(spn_tipo);
-        sistema_operativo = ObtenerCadena(spn_sistemaO);
-        imagen = Datos.imagenAleatoria(imagenes);
+        if (validar()){
+            String id,marca,color,tipo,sistema_operativo;
+            int imagen, ram;
+            id = Datos.getId();
+            marca = ObtenerCadena(spn_marca);
+            ram = Integer.parseInt(txtRam.getText().toString());
+            color = ObtenerCadena(spn_color);
+            tipo = ObtenerCadena(spn_tipo);
+            sistema_operativo = ObtenerCadena(spn_sistemaO);
+            imagen = Datos.imagenAleatoria(imagenes);
 
-        Computador c = new Computador(id,marca,ram,color,tipo,sistema_operativo,imagen);
-        c.guardar();
-        Snackbar.make(v,getResources().getString(R.string.guardado_exitoso),Snackbar.LENGTH_SHORT).setAction("Action",null).show();
+            Computador c = new Computador(id,marca,ram,color,tipo,sistema_operativo,imagen);
+            c.guardar();
+            Snackbar.make(v,getResources().getString(R.string.guardado_exitoso),Snackbar.LENGTH_SHORT).setAction("Action",null).show();
+            limpiar();
+        }
+
 
 
 
@@ -89,10 +93,20 @@ public class CrearComputador extends AppCompatActivity {
         spn_sistemaO.setSelection(0);
     }
 
+    public boolean validar(){
+        if (txtRam.getText().toString().trim().isEmpty()){
+            txtRam.requestFocus();
+            txtRam.setError(getResources().getString(R.string.error_vacio));
+            return false;
+        }
+        return true;
+    }
+
     public void onBackPressed(){
         finish();
         Intent i = new Intent(CrearComputador.this,Principal.class);
         startActivity(i);
     }
+
 
 }

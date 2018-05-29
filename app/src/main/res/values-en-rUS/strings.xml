@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">tallerComputadores</string>
+    <string name="action_settings">Settings</string>
+    <string name="marca">Brand</string>
+    <string name="ram">RAM</string>
+    <string name="color">Color</string>
+    <string name="tipo">Type</string>
+    <string name="sistema_operativo">OS</string>
+    <string name="agregar_computador">Add PC</string>
+    <string name="hp">HP</string>
+    <string name="dell">DELL</string>
+    <string name="acer">ACER</string>
+    <string name="blanco">White</string>
+    <string name="negro">Black</string>
+    <string name="purpura">Purple</string>
+    <string name="pc_mesa">Desk</string>
+    <string name="pc_portatil">Laptop</string>
+    <string name="windows">Windows</string>
+    <string name="solaris">Solaris</string>
+    <string name="mac_os">Mac OS</string>
+    <string name="guardado_exitoso">Successfully Saved!</string>
+    <string name="eliminado_exitoso">Target eliminated</string>
+    <string name="error_vacio">You must complete all the Fields</string>
+    <string name="crear">Create</string>
+    <string name="limpiar">Clear</string>
+    <string name="informacion">BIO</string>
+    <string name="eliminar">Delete</string>
+    <string name="pregunta_eliminar">Are you sure you wanna delete it?</string>
+    <string name="eliminar_si">Yes,Delete</string>
+    <string name="eliminar_no">No, Cancel</string>
+</resources>
