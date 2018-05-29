@@ -1,5 +1,6 @@
 package com.holamundo.tallercomputadores;
 
+import android.content.Intent;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -86,6 +87,12 @@ public class CrearComputador extends AppCompatActivity {
         spn_color.setSelection(0);
         spn_tipo.setSelection(0);
         spn_sistemaO.setSelection(0);
+    }
+
+    public void onBackPressed(){
+        finish();
+        Intent i = new Intent(CrearComputador.this,Principal.class);
+        startActivity(i);
     }
 
 }

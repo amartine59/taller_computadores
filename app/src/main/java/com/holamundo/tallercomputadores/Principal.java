@@ -1,5 +1,6 @@
 package com.holamundo.tallercomputadores;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -10,6 +11,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class Principal extends AppCompatActivity {
+    private Intent i;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +25,14 @@ public class Principal extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+             crearComputadores(view);
             }
         });
+    }
+
+    public void crearComputadores(View v){
+        i = new Intent(Principal.this,CrearComputador.class);
+        startActivity(i);
     }
 
     @Override
